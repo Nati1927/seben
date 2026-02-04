@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Demo - Seben Event Organizers</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-calendar-alt me-2"></i>
+                <span data-translate="nav_brand">Seben Event Organizers</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" data-translate="nav_home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" data-translate="nav_about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html" data-translate="nav_services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" data-translate="nav_contact">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-globe me-1"></i>
+                            <span id="languageToggle">EN</span>
+                        </a>
+                        <ul class="dropdown-menu language-dropdown">
+                            <li><a class="dropdown-item" href="#" data-lang="en" onclick="window.languageManager.switchLanguage('en')">English</a></li>
+                            <li><a class="dropdown-item" href="#" data-lang="am" onclick="window.languageManager.switchLanguage('am')">አማርኛ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Demo Content -->
+    <div class="container" style="margin-top: 120px; padding: 40px 0;">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 data-translate="hero_title">Seben Event Organizers</h1>
+                <p class="lead" data-translate="hero_subtitle">Creating Unforgettable Moments, One Event at a Time</p>
+                
+                <div class="mt-4">
+                    <h3 data-translate="services_title">Our Specialties</h3>
+                    <div class="row mt-4">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-heart fa-2x text-primary mb-3"></i>
+                                    <h5 data-translate="service_weddings">Weddings</h5>
+                                    <p data-translate="service_weddings_desc">Elegant and romantic wedding celebrations tailored to your dreams</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-birthday-cake fa-2x text-primary mb-3"></i>
+                                    <h5 data-translate="service_birthdays">Birthdays</h5>
+                                    <p data-translate="service_birthdays_desc">Memorable birthday parties for all ages with creative themes</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-glass-cheers fa-2x text-primary mb-3"></i>
+                                    <h5 data-translate="service_anniversaries">Anniversaries</h5>
+                                    <p data-translate="service_anniversaries_desc">Celebrate milestones with sophisticated anniversary events</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-star fa-2x text-primary mb-3"></i>
+                                    <h5 data-translate="service_private">Private Events</h5>
+                                    <p data-translate="service_private_desc">Exclusive celebrations designed for your special occasions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-5">
+                    <h3 data-translate="packages_title">Our Packages</h3>
+                    <div class="row mt-4">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-header bg-secondary text-white text-center">
+                                    <h5 data-translate="package_silver">Silver Package</h5>
+                                    <h2>$2,500</h2>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-check text-success me-2"></i><span data-translate="silver_feature_1">Event Planning & Coordination</span></li>
+                                        <li><i class="fas fa-check text-success me-2"></i><span data-translate="silver_feature_2">Basic Decoration Setup</span></li>
+                                        <li><i class="fas fa-check text-success me-2"></i><span data-translate="silver_feature_3">Vendor Coordination</span></li>
+                                    </ul>
+                                    <button class="btn btn-outline-primary w-100" data-translate="btn_get_started">Get Started</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card border-primary">
+                                <div class="card-header bg-primary text-white text-center">
+                                    <span class="badge bg-warning text-dark" data-translate="package_most_popular">Most Popular</span>
+                                    <h5 data-translate="package_gold">Gold Package</h5>
+                                    <h2>$5,000</h2>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-check text-success me-2"></i><span data-translate="gold_feature_1">Everything in Silver</span></li>
+                                        <li><i class="fas fa-check text-success me-2"></i><span data-translate="gold_feature_2">Premium Decorations</span></li>
+                                        <li><i class="fas fa-check text-success me-2"></i><span data-translate="gold_feature_3">Photography Services</span></li>
+                                    </ul>
+                                    <button class="btn btn-primary w-100" data-translate="btn_get_started">Get Started</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-header bg-dark text-white text-center">
+                                    <h5 data-translate="package_diamond">Diamond Package</h5>
+                                    <h2>$10,000</h2>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-check text-success me-2"></i><span data-translate="diamond_feature_1">Everything in Gold</span></li>
+                                        <li><i class="fas fa-check text-success me-2"></i><span data-translate="diamond_feature_2">Luxury Venue Selection</span></li>
+                                        <li><i class="fas fa-check text-success me-2"></i><span data-translate="diamond_feature_3">Full Photography & Video</span></li>
+                                    </ul>
+                                    <button class="btn btn-outline-primary w-100" data-translate="btn_get_started">Get Started</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-5">
+                    <div class="alert alert-info">
+                        <h4>Language Toggle Demo</h4>
+                        <p>Click the language dropdown in the navigation to switch between English and Amharic (አማርኛ). All content will dynamically update!</p>
+                        <p><strong>Current Language:</strong> <span id="currentLang">English</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Translation JS -->
+    <script src="js/translations.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    
+    <script>
+        // Update current language display
+        function updateCurrentLanguageDisplay() {
+            const currentLangSpan = document.getElementById('currentLang');
+            if (currentLangSpan) {
+                currentLangSpan.textContent = window.languageManager.getCurrentLanguage() === 'en' ? 'English' : 'አማርኛ (Amharic)';
+            }
+        }
+        
+        // Override the switchLanguage function to update display
+        const originalSwitchLanguage = window.languageManager.switchLanguage.bind(window.languageManager);
+        window.languageManager.switchLanguage = function(language) {
+            originalSwitchLanguage(language);
+            updateCurrentLanguageDisplay();
+        };
+        
+        // Initial update
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(updateCurrentLanguageDisplay, 100);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seben Event Organizers - Premium Event Management</title>
+    <meta name="description" content="Seben Event Organizers specializes in weddings, birthdays, anniversaries, and private celebrations. Creating unforgettable moments with premium event planning services.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-calendar-alt me-2"></i>
+                <span data-translate="nav_brand">Seben Event Organizers</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home" data-translate="nav_home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" data-translate="nav_about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html" data-translate="nav_services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" data-translate="nav_contact">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-globe me-1"></i>
+                            <span id="languageToggle">EN</span>
+                        </a>
+                        <ul class="dropdown-menu language-dropdown">
+                            <li><a class="dropdown-item" href="#" data-lang="en" onclick="window.languageManager.switchLanguage('en')">English</a></li>
+                            <li><a class="dropdown-item" href="#" data-lang="am" onclick="window.languageManager.switchLanguage('am')">አማርኛ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h1 class="hero-title" data-translate="hero_title">Seben Event Organizers</h1>
+                        <p class="hero-subtitle" data-translate="hero_subtitle">Creating Unforgettable Moments, One Event at a Time</p>
+                        <div class="hero-buttons">
+                            <a href="contact.html" class="btn btn-primary btn-lg me-3" data-translate="btn_contact_us">Contact Us</a>
+                            <a href="#packages" class="btn btn-outline-light btn-lg" data-translate="btn_view_packages">View Packages</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title" data-translate="services_title">Our Specialties</h2>
+                    <p class="section-subtitle" data-translate="services_subtitle">We bring your vision to life with our comprehensive event planning services</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4 data-translate="service_weddings">Weddings</h4>
+                        <p data-translate="service_weddings_desc">Elegant and romantic wedding celebrations tailored to your dreams</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                        <h4 data-translate="service_birthdays">Birthdays</h4>
+                        <p data-translate="service_birthdays_desc">Memorable birthday parties for all ages with creative themes</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-glass-cheers"></i>
+                        </div>
+                        <h4 data-translate="service_anniversaries">Anniversaries</h4>
+                        <p data-translate="service_anniversaries_desc">Celebrate milestones with sophisticated anniversary events</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 data-translate="service_private">Private Events</h4>
+                        <p data-translate="service_private_desc">Exclusive celebrations designed for your special occasions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title" data-translate="packages_title">Our Packages</h2>
+                    <p class="section-subtitle" data-translate="packages_subtitle">Choose the perfect package for your special event</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h3 data-translate="package_silver">Silver Package</h3>
+                            <div class="package-price">$2,500</div>
+                        </div>
+                        <div class="package-body">
+                            <ul class="package-features">
+                                <li><i class="fas fa-check"></i> <span data-translate="silver_feature_1">Event Planning & Coordination</span></li>
+                                <li><i class="fas fa-check"></i> <span data-translate="silver_feature_2">Basic Decoration Setup</span></li>
+                                <li><i class="fas fa-check"></i> <span data-translate="silver_feature_3">Vendor Coordination</span></li>
+                                <li><i class="fas fa-check"></i> <span data-translate="silver_feature_4">Day-of Event Management</span></li>
+                                <li><i class="fas fa-check"></i> <span data-translate="silver_feature_5">Up to 50 Guests</span></li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline-primary" data-translate="btn_get_started">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="package-card featured">
+                        <div class="package-badge" data-translate="package_most_popular">Most Popular</div>
+                        <div class="package-header">
+                            <h3 data-translate="package_gold">Gold Package</h3>
+                            <div class="package-price">$5,000</div>
+                        </div>
+                        <div class="package-body">
+                            <ul class="package-features">
+                                <li><i class="fas fa-check"></i> <span data-translate="gold_feature_1">Everything in Silver</span></li>
+                                <li><i class="fas fa-check"></i> <span data-translate="gold_feature_2">Premium Decorations</span></li>
+                                <li><i class="fas fa-check"></i> <span data-translate="gold_feature_3">Photography Services</span></li>
+                                <li><i class="fas fa-check"></i> <span data-translate="gold_feature_4">Catering Coordination</span></li>
+                                <li><i class="fas fa-check"></i> <span data-translate="gold_feature_5">Up to 100 Guests</span></li>
+                                <li><i class="fas fa-check"></i> <span data-translate="gold_feature_6">Custom Theme Design</span></li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-primary" data-translate="btn_get_started">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h3 data-translate="package_diamond">Diamond Package</h3>
+                            <div class="package-price">$10,000</div>
+                        </div>
+                        <div class="package-body">
+                            <ul class="package-features">
+                                <li><i class="fas fa-check"></i> <span data-translate="diamond_feature_1">Everything in Gold</span></li>
+                                <li><i class="fas fa-check"></i> <span data-translate="diamond_feature_2">Luxury Venue Selection</span></li>
+                                <li><i class="fas fa-check"></i> <span data-translate="diamond_feature_3">Full Photography & Video</span></li>
+                                <li><i class="fas fa-check"></i> <span data-translate="diamond_feature_4">Premium Catering</span></li>
+                                <li><i class="fas fa-check"></i> <span data-translate="diamond_feature_5">Unlimited Guests</span></li>
+                                <li><i class="fas fa-check"></i> <span data-translate="diamond_feature_6">Personal Event Coordinator</span></li>
+                                <li><i class="fas fa-check"></i> <span data-translate="diamond_feature_7">Post-Event Cleanup</span></li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline-primary" data-translate="btn_get_started">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title" data-translate="testimonials_title">What Our Clients Say</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p data-translate="testimonial_1">"Seben Event Organizers made our wedding absolutely perfect. Every detail was handled with care and professionalism."</p>
+                        <div class="testimonial-author">
+                            <strong data-translate="testimonial_1_author">Sarah & Michael</strong>
+                            <span data-translate="testimonial_1_type">Wedding Clients</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p data-translate="testimonial_2">"The team exceeded our expectations for our anniversary celebration. Truly professional and creative!"</p>
+                        <div class="testimonial-author">
+                            <strong data-translate="testimonial_2_author">Robert & Linda</strong>
+                            <span data-translate="testimonial_2_type">Anniversary Clients</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p data-translate="testimonial_3">"My daughter's birthday party was magical! The attention to detail and creativity was outstanding."</p>
+                        <div class="testimonial-author">
+                            <strong data-translate="testimonial_3_author">Jennifer Martinez</strong>
+                            <span data-translate="testimonial_3_type">Birthday Client</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5 data-translate="nav_brand">Seben Event Organizers</h5>
+                    <p data-translate="footer_description">Creating unforgettable moments with premium event planning services.</p>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <p class="mt-2" data-translate="footer_copyright">&copy; 2024 Seben Event Organizers. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Translation JS -->
+    <script src="js/translations.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
